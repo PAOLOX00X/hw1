@@ -1,0 +1,650 @@
+/*--------GENERALE--------*/
+@font-face {
+    font-family: military-font;
+    src: '/Uniform Bold.ttf';
+}
+
+body{
+    font-family: 'military-font', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.box{
+    display: flex;
+    background-color: #ffcc01;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0px 20px;
+    height: 57px;
+    text-decoration: none;
+}
+
+.box:hover{
+    background-color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+/*DA SISTEMARE*/
+.underline{
+    color: #ffcc01;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    border-bottom: 1px solid #ffcc01;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.underline:hover{
+    border-bottom: none;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: lighter;
+    line-height: 48px;
+}
+
+.standard24{
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 32px;
+}
+
+.standard18{
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 24px; 
+}
+
+/*--------NAV--------*/
+nav{
+    height: 80px;
+    position: relative;
+}
+
+#nav_left{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 20px;
+}
+
+#hamburger {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+[data-index]{
+    width: 28px;
+    height: 1.5px;
+    margin: 4px 0px 4px 0px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+#hamburger .change[data-index="1"] {
+    transform: translate(0px, 9px) rotate(+45deg);
+}
+
+#hamburger .change[data-index="2"] {
+    opacity: 0;
+}
+
+#hamburger .change[data-index="3"]{
+    transform: translate(0, -9px) rotate(-45deg);
+}
+
+#logo{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#logo img{
+    width: 120px;
+    height: 100%;
+    display: block;
+}
+
+
+#nav_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 9%;
+    right: 3%;
+}
+
+#search_bar{
+    border: none;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+#search_bar input{
+    border: none;
+    font-size: 14px;
+    background: none;
+    color: white;
+    height: 32px;
+    width: 290px;
+}
+
+#search_bar button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_bar img{
+    padding: none;
+    width: 25px;
+}
+
+nav .box{
+    margin-left: 30px;
+}
+
+#menu{
+    background-image: url('alwaysHasBeen.jpeg');
+    width: 100%;
+    height: 700px;
+    background-position: right;
+    background-size: cover;
+}
+
+/*--------INTRODUCTION--------*/
+#introduction{
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/soldier-of-the-us-army-1st-raider-brigade-walks-past-tanks-news-photo-1694456644.jpg?crop=0.88932xw:1xh;center,top&resize=1200:*');
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    position: relative;
+}
+
+#introduction div{
+    position: absolute;
+    width: 450px;
+    top: 25%;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#introduction header{
+    color: #ffcc01;
+    font-size: 6.5em;
+    line-height: 6rem;
+}
+
+#introduction a{
+    color: #ffcc01;
+    text-decoration: none;
+    width: 82%;
+    font-size: 23.4px;
+    margin-top: 50px;
+    border-bottom: 2px solid #ffcc01;
+}
+
+#introduction a:hover{
+    border-bottom: none;
+}
+
+/*--------FUTURE--------*/
+#future{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+#future img{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left:40%;
+}
+
+#future div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 4.5%;
+}
+
+#future header{
+    color: #f1e4c7;
+    font-size: 1.5em;
+    font-weight: 10;
+    margin-bottom: 5%;
+}
+
+#future .title{
+    margin-bottom: 5%;
+}
+
+#future p{
+    margin-bottom: 7%;
+}
+
+#future .box{
+    margin-bottom: 7%;
+}
+
+#future .underline{
+    width: 46%;
+}
+
+/*--------BENEFITS--------*/
+#benefits{
+    background-color: #2f372f;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#benefits header{
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+#benefits .title{
+    display: flex;
+    justify-content: center;
+}
+
+#benefits_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 35%;
+    width: 100%;
+}
+
+#benefits a{
+    border-bottom: none;
+    display: flex;  
+    text-decoration: none; 
+}
+
+.options{
+    border: 1px solid white;
+    border-radius: 5%;
+    padding: 30px;
+    margin: 6px;
+    width: 120px;
+}
+
+.options img{
+    display: block;
+    width: 35px;
+    height: 35px;
+    width: auto;
+}
+
+#benefits p{
+    height: 30%;
+    margin-bottom: 50%;
+}
+
+#benefits .underline{
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 1px;
+}
+
+#benefits .underline:hover{
+    border-bottom: none;
+}
+
+#benefits_down {
+    display: flex;
+    justify-content: center;
+}
+
+#benefits .box{
+    width: 190px;
+    margin: 7%;
+}
+/*--------WAY--------*/
+#way{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#way header{
+    margin-top: 5%;
+}
+
+#way .title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#way p{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#way_center{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+#way .possibilities{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    margin: 2%;
+}
+
+#way img{
+    width: 100%;
+    height: 100%;
+}
+
+#way .possibilities span{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+#way .box{
+    display: flex;
+    width: 50%;
+    margin-bottom: 20%;
+}
+
+#STUPID_box{
+    display: flex;
+    background-color: #ffcc01;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0px 20px;
+    height: 57px;
+    width: 70%;
+    text-decoration: none;
+}
+
+#STUPID_box:hover{
+    background-color: white;
+}
+
+/*--------JOURNEY--------*/
+#journey{
+    height: 600px;
+    position: relative;
+}
+
+#journey img{
+    height: 100%;
+    width: 48%;
+}
+
+#journey_right{
+    position: absolute;
+    top: 25%;
+    left: 53%
+}
+
+#journey .right .title{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+#journey a{
+    display: flex;
+    margin-bottom: 4%;
+    width: 25%;
+    border-bottom: none;
+}
+
+#sub1{
+    border-bottom: 2px solid #ffcc01;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#sub1:hover{
+    border-bottom: none;
+}
+
+#sub2{
+    width: 640px;
+    border-bottom: 2px solid #ffcc01;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#sub2:hover{
+    border-bottom: none;
+}
+
+#sub3{
+    border-bottom: 2px solid #ffcc01;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#sub3:hover{
+    border-bottom: none;
+}
+
+/*--------PREFERENCES--------*/
+#preference{
+    display: flex;
+    flex-direction: column;
+    height: 470px;
+}
+
+
+.row{
+    display: flex;
+    height: calc(100%/2);
+    width: 100%;
+}
+
+.row a{
+    border-bottom: none;
+    width: calc(100%/3);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+}
+
+.row a:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row img{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+
+}
+
+.bonus{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row span{
+    z-index: 1;
+}
+
+.row a{
+    color: #ffcc01;
+    text-decoration: none;
+    font-size: 140%;
+}
+
+/*--------FOOTER--------*/
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer header{
+    color:#ffcc01;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: -2%;
+}
+
+footer .standard24{
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
+.not_underlined{
+    color: white;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.not_underlined:hover{
+    text-decoration: underline;
+}
+
+#footer_center{
+    display: flex;
+    height: 120px;
+    justify-content: center;
+}
+
+#footer_center div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+}
+
+#footer_center img{
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin-bottom: 10%;
+}
+
+#footer_center .not_underlined{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+#footer_second{
+    font-size: 14px;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer_second img{
+    margin-left: 10%;
+    height: 73px;
+    width: 90px;
+    margin-right: 10%;
+}
+
+.footer_title{
+    color: #ffcc01;
+}
+
+#footer_second a{
+    margin-top: 5%;
+}
+
+#footer_second_block1{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+
+#footer_second_block2{
+    border-left: 1px solid white;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#footer_second_block2 img{
+    width: 14px;
+    height: 14px;
+    margin: 0px;
+    margin-right: 3%;
+}
+
+#footer_second_block2 a{
+    display: flex;
+    align-items: center;
+}
+
+#footer_third{
+    margin-top: 5%;
+    margin-left: 23%;
+    font-size: 14px;
+}
+
+
+#footer_third span{
+    margin-right: 7%;
+}
+
+#footer_third .not_underlined{
+    margin-right: 7%;
+}
+
+/*--------MOBILE--------*/
+
